@@ -1,0 +1,9 @@
+---
+- hosts: k8s-node
+  gather_facts: yes
+  become: yes
+  roles:
+    - { role: common, tags: common }
+    - { role: master, tags: master }
+    - { role: worker, tags: worker }
+
