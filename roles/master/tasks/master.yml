@@ -34,9 +34,6 @@
     chdir: $HOME
     creates: pod_network_setup.txt
 
-- name: Reset kubeadm
-  shell: kubeadm reset --force
-
 - name: get join command
   shell: kubeadm token create --print-join-command
   register: join_command_raw
