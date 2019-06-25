@@ -1,0 +1,9 @@
+# Compiled Files
+*.tfstate
+*.tfstate.backup
+
+# Modules Dir
+*.terraform/
+
+# Sensitive Files
+/variables.tf
