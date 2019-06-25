@@ -3,6 +3,10 @@ data "template_file" "k8s-master" {
     template = "${file("${path.module}/userdata-k8s-master.sh")}"
 }
 
+data "template_file" "k8s-worker" {
+    template = "${file("${path.module}/userdata-k8s-worker.sh")}"
+}
+
 # AMI
 data "aws_ami" "ubuntu" {
   most_recent = true
