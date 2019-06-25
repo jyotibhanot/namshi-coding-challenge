@@ -39,11 +39,17 @@
   4. SSH User
 
 - On Master
+  - kubectl get nodes --all-namespaces
   - kubeadm token create --print-join-command
   [Copy the join-command]
 
 - On Worker
   [Run join-command with sudo]
+
+# Cluster Validation Command:
+- On Master
+  - kubectl get nodes
+    - [Should output master and workes status as Ready]
 
 # Package Versions:
 - Terraform: v0.12.3

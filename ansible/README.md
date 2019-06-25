@@ -1,1 +1,0 @@
-# namshi-coding-challenge
