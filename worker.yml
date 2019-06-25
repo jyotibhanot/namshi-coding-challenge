@@ -1,0 +1,10 @@
+---
+- hosts: worker
+  gather_facts: yes
+  become: yes
+  roles:
+    - { role: common, tags: common }
+
+# Steps to cluster addition.
+#1. Retrieve cluster join command using - kubeadm token create --print-join-command
+#2. Run the retrieved cluster join command with sudo user.

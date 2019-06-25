@@ -1,9 +1,8 @@
 ---
-- hosts: k8s-node
+- hosts: masters
   gather_facts: yes
   become: yes
   roles:
     - { role: common, tags: common }
     - { role: master, tags: master }
-    - { role: worker, tags: worker }
 
