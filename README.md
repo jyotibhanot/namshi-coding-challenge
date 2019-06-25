@@ -22,15 +22,15 @@
 # Commands:
 - On local Linux System:
   - `wget https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_linux_amd64.zip`
-  - sudo apt-get install git unzip
-  - unzip terraform_0.12.3_linux_amd64.zip
-  - mv terraform /usr/local/bin
-  - terraform --version
-  - git clone https://github.com/jyotibhanot30/namshi-coding-challenge.git
-  - cd namshi-coding-challenge/terraform/ec2-terraform
-  - terraform init
-  - terraform plan
-  - terraform apply
+  - `sudo apt-get install git unzip`
+  - `unzip terraform_0.12.3_linux_amd64.zip`
+  - `mv terraform /usr/local/bin`
+  - `terraform --version`
+  - `git clone https://github.com/jyotibhanot30/namshi-coding-challenge.git`
+  - `cd namshi-coding-challenge/terraform/ec2-terraform`
+  - `terraform init`
+  - `terraform plan`
+  - `terraform apply`
 
 - Terraform Output gives us:
   1. Master IP
@@ -39,8 +39,8 @@
   4. SSH User
 
 - On Master
-  - kubectl get nodes --all-namespaces
-  - kubeadm token create --print-join-command
+  - `kubectl get nodes --all-namespaces`
+  - `kubeadm token create --print-join-command`
   [Copy the join-command]
 
 - On Worker
@@ -48,7 +48,7 @@
 
 # Cluster Validation Command:
 - On Master
-  - kubectl get nodes
+  - `kubectl get nodes --all-namspaces`
     - [Should output master and workes status as Ready]
 
 # Package Versions:
