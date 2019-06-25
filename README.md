@@ -21,7 +21,7 @@
 
 # Commands:
 - On local Linux System:
-  - wget https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_linux_amd64.zip
+  - `wget https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_linux_amd64.zip`
   - sudo apt-get install git unzip
   - unzip terraform_0.12.3_linux_amd64.zip
   - mv terraform /usr/local/bin
