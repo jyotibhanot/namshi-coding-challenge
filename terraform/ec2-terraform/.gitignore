@@ -4,6 +4,3 @@
 
 # Modules Dir
 *.terraform/
-
-# Sensitive Files
-/variables.tf
